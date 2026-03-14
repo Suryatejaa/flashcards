@@ -133,7 +133,7 @@ const FlashcardGame = ({ letters, onFinish }) => {
             }`}
             onClick={() => handleQuizSelect(option)}
           >
-            {option.char}
+            {option.phonetic}
           </button>
         ))}
       </div>
