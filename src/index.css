@@ -1,0 +1,213 @@
+:root {
+  --primary-pink: #ff6bad;
+  --secondary-blue: #4facfe;
+  --vibrant-yellow: #feca57;
+  --growth-green: #10ac84;
+  --soft-purple: #a55eea;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 32px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 3rem;
+  color: #2d3436;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, var(--primary-pink), var(--soft-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-hindi { background: var(--primary-pink); }
+.btn-telugu { background: var(--secondary-blue); }
+.btn-level { background: var(--soft-purple); }
+.btn-back { background: #636e72; padding: 10px 20px; font-size: 1rem; margin-top: 20px; }
+
+.flashcard-container {
+  perspective: 1000px;
+  margin: 40px auto;
+  width: 300px;
+  height: 400px;
+}
+
+.flashcard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-size: 8rem;
+  background: white;
+  border: 4px solid var(--primary-pink);
+}
+
+.card-back {
+  background: var(--primary-pink);
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #eee;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--growth-green);
+  transition: width 0.3s ease;
+}
+
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.quiz-option {
+  padding: 30px;
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 16px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quiz-option:hover {
+  background: #f8f9fa;
+  border-color: var(--secondary-blue);
+  transform: translateY(-3px);
+}
+
+.quiz-option.correct {
+  background: var(--growth-green);
+  border-color: var(--growth-green);
+  color: white;
+}
+
+.quiz-option.incorrect {
+  background: #ff7675;
+  border-color: #ff7675;
+  color: white;
+}
+
+.timer-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.dot.active {
+  background: var(--primary-pink);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.score-display {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--growth-green);
+  margin: 20px 0;
+}

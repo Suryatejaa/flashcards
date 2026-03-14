@@ -1,0 +1,61 @@
+export const HINDI_LETTERS = [
+  { id: 'h1', char: 'अ', type: 'vowel' }, { id: 'h2', char: 'आ', type: 'vowel' },
+  { id: 'h3', char: 'इ', type: 'vowel' }, { id: 'h4', char: 'ई', type: 'vowel' },
+  { id: 'h5', char: 'उ', type: 'vowel' }, { id: 'h6', char: 'ऊ', type: 'vowel' },
+  { id: 'h7', char: 'ऋ', type: 'vowel' }, { id: 'h8', char: 'ए', type: 'vowel' },
+  { id: 'h9', char: 'ऐ', type: 'vowel' }, { id: 'h10', char: 'ओ', type: 'vowel' },
+  { id: 'h11', char: 'औ', type: 'vowel' }, { id: 'h12', char: 'अं', type: 'vowel' },
+  { id: 'h13', char: 'अः', type: 'vowel' },
+  { id: 'h14', char: 'क', type: 'consonant' }, { id: 'h15', char: 'ख', type: 'consonant' },
+  { id: 'h16', char: 'ग', type: 'consonant' }, { id: 'h17', char: 'घ', type: 'consonant' },
+  { id: 'h18', char: 'ङ', type: 'consonant' }, { id: 'h19', char: 'च', type: 'consonant' },
+  { id: 'h20', char: 'छ', type: 'consonant' }, { id: 'h21', char: 'ज', type: 'consonant' },
+  { id: 'h22', char: 'झ', type: 'consonant' }, { id: 'h23', char: 'ञ', type: 'consonant' },
+  { id: 'h24', char: 'ट', type: 'consonant' }, { id: 'h25', char: 'ठ', type: 'consonant' },
+  { id: 'h26', char: 'ड', type: 'consonant' }, { id: 'h27', char: 'ढ', type: 'consonant' },
+  { id: 'h28', char: 'ण', type: 'consonant' }, { id: 'h29', char: 'त', type: 'consonant' },
+  { id: 'h30', char: 'थ', type: 'consonant' }, { id: 'h31', char: 'द', type: 'consonant' },
+  { id: 'h32', char: 'ध', type: 'consonant' }, { id: 'h33', char: 'न', type: 'consonant' },
+  { id: 'h34', char: 'प', type: 'consonant' }, { id: 'h35', char: 'फ', type: 'consonant' },
+  { id: 'h36', char: 'ब', type: 'consonant' }, { id: 'h37', char: 'भ', type: 'consonant' },
+  { id: 'h38', char: 'म', type: 'consonant' }, { id: 'h39', char: 'य', type: 'consonant' },
+  { id: 'h40', char: 'र', type: 'consonant' }, { id: 'h41', char: 'ल', type: 'consonant' },
+  { id: 'h42', char: 'व', type: 'consonant' }, { id: 'h43', char: 'श', type: 'consonant' },
+  { id: 'h44', char: 'ष', type: 'consonant' }, { id: 'h45', char: 'स', type: 'consonant' },
+  { id: 'h46', char: 'ह', type: 'consonant' }
+];
+
+export const TELUGU_LETTERS = [
+  { id: 't1', char: 'అ', type: 'vowel' }, { id: 't2', char: 'ఆ', type: 'vowel' },
+  { id: 't3', char: 'ఇ', type: 'vowel' }, { id: 't4', char: 'ఈ', type: 'vowel' },
+  { id: 't5', char: 'ఉ', type: 'vowel' }, { id: 't6', char: 'ఊ', type: 'vowel' },
+  { id: 't7', char: 'ఋ', type: 'vowel' }, { id: 't8', char: 'ఎ', type: 'vowel' },
+  { id: 't9', char: 'ఏ', type: 'vowel' }, { id: 't10', char: 'ఐ', type: 'vowel' },
+  { id: 't11', char: 'ఒ', type: 'vowel' }, { id: 't12', char: 'ఓ', type: 'vowel' },
+  { id: 't13', char: 'ఔ', type: 'vowel' }, { id: 't14', char: 'అం', type: 'vowel' },
+  { id: 't15', char: 'అః', type: 'vowel' },
+  { id: 't16', char: 'క', type: 'consonant' }, { id: 't17', char: 'ఖ', type: 'consonant' },
+  { id: 't18', char: 'గ', type: 'consonant' }, { id: 't19', char: 'ఘ', type: 'consonant' },
+  { id: 't20', char: 'ఙ', type: 'consonant' }, { id: 't21', char: 'చ', type: 'consonant' },
+  { id: 't22', char: 'ఛ', type: 'consonant' }, { id: 't23', char: 'జ', type: 'consonant' },
+  { id: 't24', char: 'ఝ', type: 'consonant' }, { id: 't25', char: 'ఞ', type: 'consonant' },
+  { id: 't26', char: 'ట', type: 'consonant' }, { id: 't27', char: 'ఠ', type: 'consonant' },
+  { id: 't28', char: 'డ', type: 'consonant' }, { id: 't29', char: 'ఢ', type: 'consonant' },
+  { id: 't30', char: 'ణ', type: 'consonant' }, { id: 't31', char: 'త', type: 'consonant' },
+  { id: 't32', char: 'థ', type: 'consonant' }, { id: 't33', char: 'ద', type: 'consonant' },
+  { id: 't34', char: 'ధ', type: 'consonant' }, { id: 't35', char: 'న', type: 'consonant' },
+  { id: 't36', char: 'ప', type: 'consonant' }, { id: 't37', char: 'ఫ', type: 'consonant' },
+  { id: 't38', char: 'బ', type: 'consonant' }, { id: 't39', char: 'భ', type: 'consonant' },
+  { id: 't40', char: 'మ', type: 'consonant' }, { id: 't41', char: 'య', type: 'consonant' },
+  { id: 't42', char: 'ర', type: 'consonant' }, { id: 't43', char: 'ల', type: 'consonant' },
+  { id: 't44', char: 'వ', type: 'consonant' }, { id: 't45', char: 'శ', type: 'consonant' },
+  { id: 't46', char: 'ష', type: 'consonant' }, { id: 't47', char: 'స', type: 'consonant' },
+  { id: 't48', char: 'హ', type: 'consonant' }, { id: 't49', char: 'ళ', type: 'consonant' },
+  { id: 't50', char: 'క్ష', type: 'consonant' }
+];
+
+export const LEVELS = [
+  { name: 'Level 1', count: 12 },
+  { name: 'Level 2', count: 24 },
+  { name: 'Level 3', count: 'all' }
+];
