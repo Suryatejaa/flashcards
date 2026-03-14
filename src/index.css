@@ -35,9 +35,16 @@ body {
   padding: 40px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;
+  width: 90%;
   max-width: 800px;
   animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    padding: 20px;
+    border-radius: 20px;
+  }
 }
 
 @keyframes fadeIn {
@@ -51,7 +58,15 @@ h1 {
   margin-bottom: 30px;
   background: linear-gradient(to right, var(--primary-pink), var(--soft-purple));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 }
 
 .button-grid {
@@ -74,6 +89,14 @@ h1 {
   color: white;
 }
 
+@media (max-width: 600px) {
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
 .btn:hover {
   transform: scale(1.05) translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -90,9 +113,16 @@ h1 {
 
 .flashcard-container {
   perspective: 1000px;
-  margin: 40px auto;
-  width: 300px;
-  height: 400px;
+  margin: 30px auto;
+  width: 250px;
+  height: 350px;
+}
+
+@media (max-width: 600px) {
+  .flashcard-container {
+    width: 200px;
+    height: 280px;
+  }
 }
 
 .flashcard {
@@ -121,6 +151,13 @@ h1 {
   font-size: 8rem;
   background: white;
   border: 4px solid var(--primary-pink);
+}
+
+@media (max-width: 600px) {
+  .card-face {
+    font-size: 5rem;
+    border-width: 3px;
+  }
 }
 
 .card-back {
@@ -160,6 +197,18 @@ h1 {
   font-size: 2.5rem;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+@media (max-width: 600px) {
+  .quiz-option {
+    padding: 15px;
+    font-size: 1.8rem;
+  }
+  
+  .quiz-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }
 
 .quiz-option:hover {
